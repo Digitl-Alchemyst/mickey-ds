@@ -7,7 +7,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const location = 'us/en-us';
+const location = 'us';
+const language = 'en-us';
+
+const prefix = `${location}/${language}`;
 
 const Header = () => {
   return (
@@ -15,12 +18,14 @@ const Header = () => {
       <div className='flex w-full max-w-[75rem] items-center hb:justify-between'>
         {/* Logo  */}
         <div className='hidden hb:flex'>
-          <Image
-            src='/MLogo.png'
-            width={75}
-            height={75}
-            alt="Mickey D's Logo"
-          />
+          <Link href='/' className='flex items-center gap-x-1'>
+            <Image
+              src='/MLogo.png'
+              width={75}
+              height={75}
+              alt="Mickey D's Logo"
+            />
+          </Link>
         </div>
         <div className='hb:hidden'>
           <Image
@@ -40,43 +45,43 @@ const Header = () => {
           {/* Nav Menu  */}
           <nav className='flex w-full space-x-4'>
             <Link
-              href={`${location}/full-menu`}
+              href={`${prefix}/full-menu`}
               className='flex items-center gap-x-1'
             >
               Our Menu <ChevronDownIcon />{' '}
             </Link>
             <Link
-              href={`${location}/deals`}
+              href={`${prefix}/deals`}
               className='flex items-center gap-x-1'
             >
               Exclusive Deals
             </Link>
             <Link
-              href={`${location}/my-mcds`}
+              href={`${prefix}/my-mcds`}
               className='flex items-center gap-x-1'
             >
               My Mickey D&apos;s Rewards
             </Link>
             <Link
-              href={`${location}/arch-card`}
+              href={`${prefix}/arch-card`}
               className='flex items-center gap-x-1'
             >
               Gift Cards
             </Link>
             <Link
-              href={`${location}/download-app`}
+              href={`${prefix}/download-app`}
               className='flex items-center gap-x-1'
             >
               Download App
             </Link>
             <Link
-              href={`${location}/about-our-food`}
+              href={`${prefix}/about-our-food`}
               className='flex items-center gap-x-1'
             >
               About Our Food
             </Link>
             <Link
-              href={`${location}/store-locator`}
+              href={`${prefix}/store-locator`}
               className='flex items-center gap-x-1'
             >
               Store Locator
