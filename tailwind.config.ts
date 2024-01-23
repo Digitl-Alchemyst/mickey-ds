@@ -1,10 +1,10 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const plugin = require('tailwindcss/plugin');
 
 const config: Config = {
-  darkMode: ["class"],
-content: [
+  darkMode: ['class'],
+  content: [
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/lib/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,20 +13,42 @@ content: [
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: '2rem',
     },
     extend: {
       flex: {
-        full: "0 0 100%"
+        full: '0 0 100%',
       },
       screens: {
-        xxl: '1950px'
+        hb: '1024px',
       },
       lineClamp: {
-        '8': '8', 
-        '15': '15', 
+        '8': '8',
+        '15': '15',
       },
       colors: {
+        mcdy: {
+          100: '#fff4d5',
+          200: '#ffe9ab',
+          300: '#ffdd80',
+          400: '#ffd256',
+          500: '#ffc72c',
+          600: '#cc9f23',
+          700: '#99771a',
+          800: '#665012',
+          900: '#332809',
+        },
+        mcdr: {
+          100: '#f8d4d2',
+          200: '#f0a9a4',
+          300: '#e97f77',
+          400: '#e15449',
+          500: '#da291c',
+          600: '#ae2116',
+          700: '#831911',
+          800: '#57100b',
+          900: '#2c0806',
+        },
         forest: {
           100: '#d7ffd1',
           200: '#b0ffa3',
@@ -149,114 +171,114 @@ content: [
           900: '#090a0a',
         },
         mwnavy: {
-          100: "#ccd2dd",
-          200: "#99a5bb",
-          300: "#66789a",
-          400: "#334b78",
-          500: "#001e56",
-          600: "#001845",
-          700: "#001234",
-          800: "#000c22",
-          900: "#000611"
+          100: '#ccd2dd',
+          200: '#99a5bb',
+          300: '#66789a',
+          400: '#334b78',
+          500: '#001e56',
+          600: '#001845',
+          700: '#001234',
+          800: '#000c22',
+          900: '#000611',
         },
         mwred: {
-          100: "#efd2d7",
-          200: "#dea4ae",
-          300: "#ce7786",
-          400: "#bd495d",
-          500: "#ad1c35",
-          600: "#8a162a",
-          700: "#681120",
-          800: "#450b15",
-          900: "#23060b"
+          100: '#efd2d7',
+          200: '#dea4ae',
+          300: '#ce7786',
+          400: '#bd495d',
+          500: '#ad1c35',
+          600: '#8a162a',
+          700: '#681120',
+          800: '#450b15',
+          900: '#23060b',
         },
         mwblack: {
-          100: "#d4d5d5",
-          200: "#aaabac",
-          300: "#7f8082",
-          400: "#555659",
-          500: "#2a2c2f",
-          600: "#222326",
-          700: "#191a1c",
-          800: "#111213",
-          900: "#080909"
+          100: '#d4d5d5',
+          200: '#aaabac',
+          300: '#7f8082',
+          400: '#555659',
+          500: '#2a2c2f',
+          600: '#222326',
+          700: '#191a1c',
+          800: '#111213',
+          900: '#080909',
         },
         rsroyal: {
-          100: "#d9e1f9",
-          200: "#b3c3f3",
-          300: "#8da5ed",
-          400: "#6787e7",
-          500: "#4169e1",
-          600: "#3454b4",
-          700: "#273f87",
-          800: "#1a2a5a",
-          900: "#0d152d"
+          100: '#d9e1f9',
+          200: '#b3c3f3',
+          300: '#8da5ed',
+          400: '#6787e7',
+          500: '#4169e1',
+          600: '#3454b4',
+          700: '#273f87',
+          800: '#1a2a5a',
+          900: '#0d152d',
         },
         rsgold: {
-            100: "#fff7cc",
-            200: "#ffef99",
-            300: "#ffe766",
-            400: "#ffdf33",
-            500: "#ffd700",
-            600: "#ccac00",
-            700: "#998100",
-            800: "#665600",
-            900: "#332b00"
+          100: '#fff7cc',
+          200: '#ffef99',
+          300: '#ffe766',
+          400: '#ffdf33',
+          500: '#ffd700',
+          600: '#ccac00',
+          700: '#998100',
+          800: '#665600',
+          900: '#332b00',
         },
         rspurple: {
-            100: "#e6cce6",
-            200: "#cc99cc",
-            300: "#b366b3",
-            400: "#993399",
-            500: "#800080",
-            600: "#660066",
-            700: "#4d004d",
-            800: "#330033",
-            900: "#1a001a"
+          100: '#e6cce6',
+          200: '#cc99cc',
+          300: '#b366b3',
+          400: '#993399',
+          500: '#800080',
+          600: '#660066',
+          700: '#4d004d',
+          800: '#330033',
+          900: '#1a001a',
         },
         rssilver: {
-            100: "#f2f2f2",
-            200: "#e6e6e6",
-            300: "#d9d9d9",
-            400: "#cdcdcd",
-            500: "#c0c0c0",
-            600: "#9a9a9a",
-            700: "#737373",
-            800: "#4d4d4d",
-            900: "#262626"
+          100: '#f2f2f2',
+          200: '#e6e6e6',
+          300: '#d9d9d9',
+          400: '#cdcdcd',
+          500: '#c0c0c0',
+          600: '#9a9a9a',
+          700: '#737373',
+          800: '#4d4d4d',
+          900: '#262626',
         },
         rsburg: {
-            100: "#e6ccd2",
-            200: "#cc99a6",
-            300: "#b36679",
-            400: "#99334d",
-            500: "#800020",
-            600: "#66001a",
-            700: "#4d0013",
-            800: "#33000d",
-            900: "#1a0006"
+          100: '#e6ccd2',
+          200: '#cc99a6',
+          300: '#b36679',
+          400: '#99334d',
+          500: '#800020',
+          600: '#66001a',
+          700: '#4d0013',
+          800: '#33000d',
+          900: '#1a0006',
         },
         rsdark: {
-          100: "#d5ced0",
-          200: "#ab9ea1",
-          300: "#806d72",
-          400: "#563d43",
-          500: "#2c0c14",
-          600: "#230a10",
-          700: "#1a070c",
-          800: "#120508",
-          900: "#090204"
+          100: '#d5ced0',
+          200: '#ab9ea1',
+          300: '#806d72',
+          400: '#563d43',
+          500: '#2c0c14',
+          600: '#230a10',
+          700: '#1a070c',
+          800: '#120508',
+          900: '#090204',
         },
         rslight: {
-            100: "#f9f8f8",
-            200: "#f3f2f2",
-            300: "#ecebeb",
-            400: "#e6e5e5",
-            500: "#e0dede",
-            600: "#b3b2b2",
-            700: "#868585",
-            800: "#5a5959",
-            900: "#2d2c2c"
+          100: '#f9f8f8',
+          200: '#f3f2f2',
+          300: '#ecebeb',
+          400: '#e6e5e5',
+          500: '#e0dede',
+          600: '#b3b2b2',
+          700: '#868585',
+          800: '#5a5959',
+          900: '#2d2c2c',
         },
         midnight: '#121063',
         copper: '#b87333',
@@ -279,38 +301,38 @@ content: [
         caramel: '#af6e4d',
         ginger: '#b06500',
         hazel: '#8e7618',
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))',
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))',
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
         },
       },
       spacing: {
@@ -373,20 +395,28 @@ content: [
   plugins: [
     require('tailwind-scrollbar-hide'),
     require('tailwindcss-animate'),
-    plugin(({ theme, addUtilities }: { theme: any; addUtilities: (arg0: any) => void }) => {
-      let neonUtilities: Record<string, any> = {};
-      const colors = theme('colors');
-      for (const color in colors) {
-        if (typeof colors[color] === 'object') {
-          const color1 = colors[color][300];
-          const color2 = colors[color][600];
-          neonUtilities[`.neon-${color}`] = {
-            boxShadow: `0 0 5px ${color1}, 0 0 20px ${color2}`,
-          };
+    plugin(
+      ({
+        theme,
+        addUtilities,
+      }: {
+        theme: any;
+        addUtilities: (arg0: any) => void;
+      }) => {
+        let neonUtilities: Record<string, any> = {};
+        const colors = theme('colors');
+        for (const color in colors) {
+          if (typeof colors[color] === 'object') {
+            const color1 = colors[color][300];
+            const color2 = colors[color][600];
+            neonUtilities[`.neon-${color}`] = {
+              boxShadow: `0 0 5px ${color1}, 0 0 20px ${color2}`,
+            };
+          }
         }
-      }
-      addUtilities(neonUtilities);
-    }),
+        addUtilities(neonUtilities);
+      },
+    ),
   ],
-}
-export default config
+};
+export default config;

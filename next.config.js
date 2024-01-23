@@ -4,14 +4,14 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: true,
   images: {
-  remotePatterns: [
+    remotePatterns: [
       {
         protocol: 'https',
         hostname: 'cloud.appwrite.io',
       },
       {
         protocol: 'https',
-        hostname: 'links.papareact.com',
+        hostname: 'www.mcdonalds.com',
       },
       {
         protocol: 'http',
